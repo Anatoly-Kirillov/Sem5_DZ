@@ -28,9 +28,5 @@ Console.Write("Введите максимальное трёхзначное ч
 int arrEnd = Convert.ToInt32(Console.ReadLine());
 int[] myArray = GetArray(arrSize, arrStart, arrEnd);
 int result = countEvNum(myArray);
-if(arrStart <= 99 && arrEnd >= 1000)
-{
-    Console.WriteLine("Вы ввели не трёхзначное число, введи трёхзначное");
-}
 Console.Write($"[{String.Join(", ", myArray)}]");
 Console.Write($" -> {String.Join(", ", result)}");
